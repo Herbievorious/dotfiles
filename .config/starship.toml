@@ -8,3 +8,7 @@ symbol = "➜"     # The "symbol" segment is being set to "➜"
 # Disable the package module, hiding it from the prompt completely
 [package]
 disabled = true
+
+[cmd_duration]
+min_time = 500
+prefix = "underwent "
