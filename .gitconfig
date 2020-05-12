@@ -1,0 +1,25 @@
+[user]
+	email = alex.j.ford@gmail.com
+	name = Alex Ford
+[diff]
+	tool = meld
+
+[alias]
+    cbranch = !"git branch | grep '*' | cut -f2 -d' '"
+    changed = !"git diff --name-only $(git cbranch) $(git merge-base $(git cbranch) develop)"
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+        lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[merge]
+	renamelimit = 5000
+[core]
+	editor = vim
+[rerere]
+	enabled = true
+[color]
+	ui = auto
+
+[url "ssh://git@bitbucket.innouk.music-group.com:2222"]
+        insteadOf = https://bitbucket.innouk.music-group.com/scm
