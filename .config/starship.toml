@@ -11,4 +11,6 @@ disabled = true
 
 [cmd_duration]
 min_time = 500
-prefix = "underwent "
+# $duration – The command duration (e.g. "15s")
+# $style    – The default style of the module (e.g. "bold yellow")
+format = "underwent [$duration]($style) "
