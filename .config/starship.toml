@@ -14,3 +14,9 @@ min_time = 500
 # $duration – The command duration (e.g. "15s")
 # $style    – The default style of the module (e.g. "bold yellow")
 format = "underwent [$duration]($style) "
+
+[time]
+time_format = "%T"
+format = "🕙 $time($style) "
+style = "bright-white"
+disabled = false
